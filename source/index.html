@@ -6,12 +6,27 @@
   <title>Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/16.png" type="image/png">
+  <link rel="icon" href="favicons/32.png" type="image/png">
+  <link rel="icon" href="favicons/152.png" type="image/png">
+  <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <a class="logo logo-text" href="index.html">Логотип сайта Кот Энержи
+    <a class="logo logo-text" href="index.html">
+      <picture>
+        <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo/logo-cat-desctop.svg">
+        <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo/logo-cat-tablet.svg">
+        <img src="images/logo/logo-cat-mobile.svg" width="33" height="38" alt="Логотип сайта Кот Энержи">
+      </picture>
+      <picture>
+        <source width="118" height="21" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo/logo-text-cat.svg">
+        <source width="101" height="18" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo/logo-text-cat.svg">
+        <img src="images/logo/logo-text-cat.svg" width="101" height="18" alt="Текстовый логотип сайта Кот Энержи">
+      </picture>
     </a>
     <nav class="nav toggle">
       <ul class="nav__list">
@@ -36,6 +51,11 @@
       <h1 class="functional__title">Функциональное
         питание для котов</h1>
       <p class="functional__description">Занялся собой? Займись котом!</p>
+      <picture>
+        <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/content/main-product-desktop@1x.png 1x, images/content/main-product-desktop@2x.png 2x">
+        <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/content/main-product-tablet@1x.png 1x, main-product-tablet@2x.png 2x">
+        <img src="images/content/main-product-mobile@1x.png" srcset="main-product-mobile@2x.png 2x" width="280" height="270" alt="Продукци Кота Энержи">
+      </picture>
     </section>
 
     <ul class="program-list">
@@ -81,6 +101,18 @@
         <p>затрачено времени</p>
       </div>
       <b>Затраты на питание: 15 000 РУБ.</b>
+      <div>
+        <picture>
+          <source width="560" height="512" type="image/jpeg" media="(min-width: 768px)" srcset="images/content/result-before-tablet@1x.jpg 1x, images/content/result-before-tablet@2x.jpg 2x">
+          <img src="images/content/result-before-mobile@1x.jpg" srcset="images/content/result-before-mobile@2x.jpg 2x" width="280" height="256" alt="Котик до похудения">
+        </picture>
+      </div>
+      <div>
+        <picture>
+          <source width="560" height="512" type="image/jpeg" media="(min-width: 768px)" srcset="images/content/result-after-tablet@1x.jpg 1x, images/content/result-after-tablet@2x.jpg 2x">
+          <img src="images/content/result-after-mobile@1x.webp" srcset="images/content/result-after-mobile@2x.jpg 2x" width="280" height="256" alt="Котик после похудения">
+        </picture>
+      </div>
     </section>
 
     <section class="map">
@@ -93,12 +125,20 @@
           Конюшенная, д. 19/8
           Санкт-Петербург</address>
       </div>
-      <iframe></iframe>
+
+      <picture>
+        <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map/map-desktop@1x.png 1x, images/map/map-desktop@2x.png 2x">
+        <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map/map-tablet@1x.png 1x, images/map/map-tablet@2x.png 2x">
+        <img src="images/map/map-mobile@1x.png" srcset="images/map/map-mobile@2x.png 2x" width="320" height="362" alt="Мы на карте">
+      </picture>
+
     </section>
   </main>
 
   <footer class="footer">
-    <a class="logo-text" href="index.html">Логотип</a>
+    <a class="logo-text" href="index.html">
+      <img src="images/logo/logo-text-cat.svg" width="128" height="24" alt="Текстовый логотип Кота Энержи">
+    </a>
     <ul class="social-list">
       <li class="social-item">
         <span class="vissualy-hidden">Вконтакте</span>
@@ -110,7 +150,9 @@
         <span class="vissualy-hidden">Телеграм</span>
       </li>
     </ul>
-    <a class="copyright" href="https://htmlacademy.ru/">Логотип HTML Academy</a>
+    <a class="copyright" href="https://htmlacademy.ru/">HTML
+      <img src="images/logo/logo-html.svg" width="27" height="34" alt="Логотип HTML Academy">
+    </a>
   </footer>
 </body>
 
