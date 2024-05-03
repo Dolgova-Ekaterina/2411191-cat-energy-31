@@ -1,7 +1,28 @@
 /* GLOBAL */
 @import "./common/variables.scss";
+@import "./common/mixins.scss";
 @import "./common/global.scss";
 @import "./common/fonts.scss";
 
 /* BLOCKS */
 @import "./blocks/header.scss";
+@import "./blocks/page.scss";
+@import "./blocks/nav.scss";
+@import "./blocks/functional.scss";
+@import "./blocks/program-list.scss";
+@import "./blocks/program-card.scss";
+@import "./blocks/process.scss";
+@import "./blocks/primer.scss";
+@import "./blocks/map-card.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/catalog-card.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/catalog-product.scss";
+@import "./blocks/more-card.scss";
+@import "./blocks/additional.scss";
+@import "./blocks/additional-product.scss";
+@import "./blocks/present.scss";
+@import "./blocks/promotions.scss";
+@import "./blocks/analitic.scss";
+@import "./blocks/catalog-page.scss";
+@import "./blocks/subscription.scss";

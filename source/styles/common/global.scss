@@ -1,1 +1,38 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.vissualy-hidden {
+  display: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  width: 280px;
+  height: 40px;
+  background-color: #68b738;
+  border: none;
+  color: #ffffff;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.show-button {
+  background-color: #f2f2f2;
+  color: #444444;
+}
+
+.toogle-clouse {
+  display: none;
+}
