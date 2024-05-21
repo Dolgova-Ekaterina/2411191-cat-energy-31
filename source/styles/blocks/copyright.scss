@@ -1,0 +1,22 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 40px;
+}
+
+
+.copyright__text-logo {
+  color: #444444;
+}
+
+
+.copyright__img-logo {
+  width: 27px;
+  height: 34px;
+  background-color: #666666;
+  mask-image: url("../../icons/stack.svg#logo-html");
+  mask-size: 27px 34px;
+  mask-repeat: no-repeat;
+}

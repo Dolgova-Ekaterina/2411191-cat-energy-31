@@ -1,5 +1,6 @@
 .primer {
   background-color: #eaeaea;
+  padding: 25px 20px 40px;
 }
 
 .primer__title {
@@ -9,6 +10,7 @@
   line-height: 40px;
   text-align: left;
   color: #000000;
+  margin: 0;
 }
 
 .primer__description {
@@ -16,6 +18,8 @@
   line-height: 18px;
   text-align: left;
   color: #444444;
+  margin: 0;
+  margin-top: 40px;
 }
 
 .primer__expenses {
@@ -24,4 +28,6 @@
   line-height: 20px;
   text-align: center;
   color: #000000;
+  margin: 0;
+  margin-top: 20px;
 }

@@ -1,0 +1,114 @@
+.program {
+  margin-top: 20px;
+}
+
+.program__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.program__card-title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  margin: 0;
+  margin-left: 68px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 29px;
+}
+
+.program__card-description {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+  color: #222222;
+  position: relative;
+  margin: 0;
+  margin-bottom: 38px;
+}
+
+.program__card-link {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+  padding: 4px 56px 4px 0;
+  // position: relative;
+}
+
+
+.program__card {
+  position: relative;
+  background-color: #f2f2f2;
+  padding: 30px 20px 18px;
+}
+
+
+.program__card--slim::before {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 50px;
+  background-color: transparent;
+  top: 22px;
+  left: 28px;
+  background-image: url("../../icons/stack.svg#cat-slim");
+  z-index: 1;
+}
+
+
+.program__card--pro::before {
+  content: "";
+  position: absolute;
+  width: 67px;
+  height: 28px;
+  background-color: transparent;
+  top: 35px;
+  left: 11px;
+  background-image: url("../../icons/stack.svg#cat-pro");
+  z-index: 1;
+}
+
+.program__card::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #68b738;
+  border-radius: 50%;
+  top: 24px;
+  left: 20px;
+}
+
+.program__card-description::after {
+  content: "";
+  border: 1px solid #d9d9d9;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -21px;
+}
+
+
+.program__card-link::after {
+  content: "";
+  background-color: #000000;
+  width: 32px;
+  height: 10px;
+  position: absolute;
+  bottom: 23px;
+  left: 114px;
+  mask-image: url("../../icons/stack.svg#icon-arrow");
+  mask-repeat: no-repeat;
+  mask-size: 32px 10px;
+  mask-position: 100%;
+}

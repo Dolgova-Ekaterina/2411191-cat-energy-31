@@ -1,9 +1,12 @@
 .present {
+  display: flex;
   width: 280px;
   height: 290px;
   background-image: url("../../images/background/background-cat-space-mobile@1x.png");
   background-repeat: no-repeat;
   background-color: #227409;
+  padding: 60px 60px 40px;
+  margin-top: 54px;
 }
 
 .present__description {
@@ -11,4 +14,18 @@
   line-height: 20px;
   color: #ffffff;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.present__description::before {
+  content: "";
+  width: 80px;
+  height: 80px;
+  background-image: url("../../icons/stack.svg#present");
+  background-repeat: no-repeat;
+  display: block;
 }

@@ -3,13 +3,13 @@
 @import "./common/mixins.scss";
 @import "./common/global.scss";
 @import "./common/fonts.scss";
+@import "./common/vissualy-hidden.scss";
 
 /* test  BLOCKS */
 @import "./blocks/header.scss";
 @import "./blocks/nav.scss";
 @import "./blocks/functional.scss";
-@import "./blocks/program-list.scss";
-@import "./blocks/program-card.scss";
+@import "./blocks/program.scss";
 @import "./blocks/process.scss";
 @import "./blocks/primer.scss";
 @import "./blocks/map-card.scss";
@@ -24,3 +24,7 @@
 @import "./blocks/analitic.scss";
 @import "./blocks/catalog-page.scss";
 @import "./blocks/subscription.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/catalog-card.scss";
+@import "./blocks/header-items.scss";

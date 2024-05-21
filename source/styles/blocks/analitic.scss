@@ -3,10 +3,32 @@
   font-size: 24px;
   line-height: 24px;
   color: #000000;
+  margin-top: 15px;
 }
 
 .analitic__statistics {
   font-size: 12px;
   line-height: 12px;
   color: #444444;
+  margin: 0;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.analitic {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.analitic__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 124px;
+  border-top: 1px solid #cdcdcd;
+  border-right: 1px solid #cdcdcd;
+  border-left: 1px solid #cdcdcd;
+  border-radius: 4px;
 }

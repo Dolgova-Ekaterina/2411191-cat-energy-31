@@ -1,0 +1,25 @@
+.header-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 13px 20px;
+}
+
+
+.header-items__button {
+  mask-image: url("../../icons/stack.svg#icon-menu");
+  mask-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  background-color: #000000;
+  cursor: pointer;
+}
+
+.header-items__button--clouse {
+  mask-image: url("../../icons/stack.svg#icon-clouse");
+  mask-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  background-color: #000000;
+  cursor: pointer;
+}
