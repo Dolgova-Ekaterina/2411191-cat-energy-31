@@ -1,6 +1,28 @@
+.map {
+  @media (min-width: $desktop) {
+    position: relative;
+  }
+}
+
 .map-card {
   display: flex;
   padding: 20px 26px;
+
+  @media (min-width: $tablet) {
+    padding: 60px 70px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop) {
+    position: absolute;
+    min-width: 565px;
+    height: 199px;
+    z-index: 1;
+    background-color: #ffffff;
+    top: 22%;
+    left: 110px;
+    padding: 60px 80px;
+  }
 }
 
 .map-card__title {
@@ -11,7 +33,14 @@
   color: #111111;
   text-transform: uppercase;
   margin: 0;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 26px;
+    width: 163px;
+  }
 }
+
 
 .map-card__address {
   font-size: 14px;
@@ -19,6 +48,12 @@
   text-align: left;
   color: #444444;
   font-style: normal;
+
+  @media (min-width: $tablet) {
+    width: 157px;
+    font-size: 16px;
+    text-align: right;
+  }
 }
 
 .map-card--dark {

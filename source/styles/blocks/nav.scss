@@ -13,11 +13,22 @@
   flex-direction: column;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    gap: 33px;
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 
 .nav__link {
   color: #000000;
+
+  @media (min-width: $desktop) {
+    color: #ffffff;
+  }
 }
 
 
@@ -32,6 +43,10 @@
   width: 100%;
   top: 0;
   left: 0;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
 }
 
 .nav__item::before {
@@ -41,6 +56,10 @@
   width: 100%;
   top: 132px;
   left: 0;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
 }
 
 .nav__list::after {
@@ -50,4 +69,18 @@
   width: 100%;
   top: 66px;
   left: 0;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+
+.nav--cloused {
+  display: none;
+  cursor: pointer;
+
+  @media (min-width: $tablet) {
+    display: block;
+  }
 }

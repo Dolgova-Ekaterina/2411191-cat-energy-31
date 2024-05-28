@@ -4,6 +4,11 @@
   line-height: 24px;
   color: #000000;
   margin-top: 15px;
+
+  @media (min-width: $desktop) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .analitic__statistics {
@@ -13,12 +18,24 @@
   margin: 0;
   margin-top: 8px;
   text-align: center;
+
+  @media (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .analitic {
   margin-top: 20px;
   display: flex;
   justify-content: space-around;
+
+  @media (min-width: $desktop) {
+    margin-left: 110px;
+    justify-content: left;
+    gap: 42px;
+    margin-top: 69px;
+  }
 }
 
 

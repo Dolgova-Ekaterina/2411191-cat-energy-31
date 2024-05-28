@@ -2,8 +2,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  min-width: 168px;
   margin-top: 40px;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+  }
 }
 
 

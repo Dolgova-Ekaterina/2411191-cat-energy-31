@@ -1,23 +1,46 @@
-.catalog {
-  padding: 20px 20px 25px;
-  display: grid;
-}
+// .catalog {
+//   padding: 20px 20px 25px;
+//   display: grid;
+
+//   @media (min-width: $tablet) {
+//     padding: 0 37px 40px;
+//     min-height: 511px;
+//     align-items: center;
+//   }
+// }
 
 
-.catalog__title {
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  text-align: left;
-  color: #222222;
-}
+// .catalog__title {
+//   font-family: "Oswald", sans-serif;
+//   font-size: 16px;
+//   font-weight: 400;
+//   line-height: 20px;
+//   text-align: left;
+//   color: #222222;
+//   margin: 0;
+//   text-transform: uppercase;
+//   width: 100px;
+// }
 
-.catalog__wrapper {
-  display: flex;
-  flex-direction: column;
-}
+// .catalog__wrapper {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+// }
 
-.catalog__block {
-  display: flex;
-}
+// .catalog__block {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr;
+//   align-items: center;
+
+//   @media (min-width: $tablet) {
+//     display: flex;
+//     flex-direction: column;
+//   }
+// }
+
+// .catalog__order-button {
+//   @media (min-width: $tablet) {
+//     width: 250px;
+//   }
+// }

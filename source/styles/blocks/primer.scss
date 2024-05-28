@@ -1,6 +1,11 @@
 .primer {
   background-color: #eaeaea;
   padding: 25px 20px 40px;
+
+  @media (min-width: $desktop) {
+    display: flex;
+    padding: 0;
+  }
 }
 
 .primer__title {
@@ -11,6 +16,12 @@
   text-align: left;
   color: #000000;
   margin: 0;
+
+  @media (min-width: $desktop) {
+    margin-left: 110px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .primer__description {
@@ -20,6 +31,13 @@
   color: #444444;
   margin: 0;
   margin-top: 40px;
+
+  @media (min-width: $desktop) {
+    margin-left: 110px;
+    max-width: 436px;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .primer__expenses {
@@ -30,4 +48,9 @@
   color: #000000;
   margin: 0;
   margin-top: 20px;
+
+  @media (min-width: $desktop) {
+    font-size: 20px;
+    margin-top: 55px;
+  }
 }

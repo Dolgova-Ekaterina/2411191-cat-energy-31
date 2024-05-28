@@ -1,6 +1,159 @@
+.more-card {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 25px 0 20px;
+  align-items: center;
+  position: relative;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+    width: 324px;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-image: none;
+    background-color: transparent;
+  }
+
+  @media (min-width: $desktop) {
+    width: 245px;
+  }
+}
+
+
+.more-card__wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  position: relative;
+  width: 100%;
+
+  @media (min-width: $tablet) {
+    align-items: center;
+    padding: 50px 37px 40px;
+    background-color: transparent;
+    row-gap: 22px;
+    border-bottom: none;
+    display: flex;
+    flex-direction: column;
+    width: 324px;
+    border: solid 2px #f2f2f2;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 38px 40px;
+    width: 245px;
+  }
+}
+
+
 .more-card__description {
+
+  margin: 0;
   font-size: 12px;
   line-height: 16px;
-  text-align: center;
+  margin-bottom: 21px;
   color: #444444;
+
+
+  @media (min-width: $tablet) {
+    margin: 0;
+    padding: 0;
+    width: 70%;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+  }
 }
+
+// font-size: 12px;
+// line-height: 16px;
+// text-align: center;
+// color: #444444;
+// margin: 0;
+// margin-top: 8px;
+// margin-bottom: 21px;
+
+
+.more-card__title {
+  margin: 78px 0 8px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  text-transform: uppercase;
+  position: relative;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 24px;
+    padding: 0;
+
+    max-width: 150px;
+    text-align: center;
+    margin: 47px auto 0;
+    margin-bottom: 0;
+  }
+}
+// text-align: center;
+// margin: 0;
+// margin-top: 78px;
+// text-transform: uppercase;
+// width: 100%;
+// position: relative;
+
+
+.more-card__button {
+  display: block;
+  background-color: #f2f2f2;
+  color: #444444;
+  border: none;
+  margin: 0 auto;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 60%;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+
+  @media (min-width: $tablet) {
+    grid-area: 3 / 1 / auto / 2;
+    margin-top: 50px;
+  }
+}
+
+
+.more-card__title::before {
+  content: "";
+  background-color: #cdcdcd;
+  width: 2px;
+  height: 30px;
+  position: absolute;
+  bottom: 50px;
+  right: 100px;
+
+  @media (min-width: $tablet) {
+    bottom: 80px;
+    right: 72px;
+  }
+}
+
+
+.more-card__title::after {
+  content: "";
+  background-color: #cdcdcd;
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  bottom: 64px;
+  right: 86px;
+
+  @media (min-width: $tablet) {
+    bottom: 94px;
+    right: 58px;
+  }
+}
+

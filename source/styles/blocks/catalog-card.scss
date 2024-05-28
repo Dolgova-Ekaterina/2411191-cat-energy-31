@@ -1,10 +1,126 @@
 .catalog-card {
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: center;
+  }
+
+  @media (min-width: $desktop) {
+    justify-content: flex-start;
+    gap: 63px 80px;
+  }
 }
+
+// margin: 0;
+// padding: 0;
+
+// @media (min-width: $tablet) {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr;
+//   margin-top: 84px;
+// }
 
 
 .catalog-card__item {
+  padding: 20px 20px 25px;
+  position: relative;
   border-bottom: 1px solid #ebebeb;
   border-top: 1px solid #ebebeb;
+
+
+  @media (min-width: $tablet) {
+    width: 324px;
+    padding: unset;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: end;
+    border: none;
+  }
+
+  @media (min-width: $desktop) {
+    width: 245px;
+  }
+}
+
+
+.catalog-card__wrapper {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  row-gap: 14px;
+
+
+  @media (min-width: $tablet) {
+    background-color: #f2f2f2;
+    padding: 0 37px 40px;
+    margin-top: 82px;
+    // height: calc(100% - 82px);
+    border-bottom: none;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    row-gap: 22px;
+    align-items: start;
+    justify-content: center;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 38px 40px;
+  }
+}
+
+.catalog-card__link {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  object-fit: contain;
+  grid-column: 1;
+  grid-row: 1 / span 2;
+
+  @media (min-width: $tablet) {
+    height: 210px;
+    margin-top: -125px;
+    grid-column: 1;
+    grid-row: unset;
+  }
+}
+
+.catalog-card__img {
+  display: block;
+  margin: auto;
+
+  &:hover {
+    opacity: 60%;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+}
+
+.catalog-card__title {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  max-width: 90px;
+  text-transform: uppercase;
+  grid-column: 2 / -1;
+
+  @media (min-width: $tablet) {
+    grid-row: 2;
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 150px;
+    text-align: center;
+    margin: 0 auto;
+    grid-column: 1 / -1;
+  }
 }

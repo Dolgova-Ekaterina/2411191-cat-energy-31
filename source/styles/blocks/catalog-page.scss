@@ -6,6 +6,21 @@
   text-align: left;
   color: #000000;
   margin: 0;
-  padding: 27px 42px 40px 20px;
+  padding: 27px 40px 40px 20px;
   border-top: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet) {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 0;
+    margin: 65px 30px 84px;
+    border: none;
+  }
+}
+
+
+.catalog-page__container {
+  @media (min-width: $tablet) {
+    padding: 30px;
+  }
 }

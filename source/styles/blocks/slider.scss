@@ -11,12 +11,12 @@
 
 .slider {
   position: relative;
+
+  @media (min-width: $desktop) {
+    margin-left: 224px;
+  }
 }
 
-// .slider__img {
-//   width: 100%;
-//   min-height: 256px;
-// }
 
 .slider__button {
   cursor: pointer;
@@ -44,6 +44,10 @@
   position: absolute;
   bottom: 111px;
   left: -38px;
+
+  @media (min-width: $tablet) {
+    bottom: 249px;
+  }
 }
 
 

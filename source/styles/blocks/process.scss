@@ -1,9 +1,27 @@
+.process {
+  @media (min-width: $desktop) {
+    margin: 71px 0;
+  }
+}
+
+
 .process__list {
   display: flex;
   flex-direction: column;
   gap: 20px;
   margin: 40px 0 49px;
   padding: 0;
+
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 37px;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .process__title {
@@ -15,6 +33,12 @@
   color: #000000;
   margin: 0;
   margin-top: 20px;
+
+  @media (min-width: $tablet) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 45px;
+  }
 }
 
 
@@ -26,6 +50,10 @@
   margin-left: 80px;
   min-height: 60px;
   position: relative;
+
+  @media (min-width: $tablet) {
+    min-height: 280px;
+  }
 }
 
 .process__item--health::before {

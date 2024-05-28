@@ -6,7 +6,14 @@
   background-repeat: no-repeat;
   background-color: #227409;
   padding: 60px 60px 40px;
-  margin-top: 54px;
+  margin-top: 35px;
+
+  @media (min-width: $tablet) {
+    background-image: url("../../images/background/background-cat-space-tablet@1x.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+  }
 }
 
 .present__description {
@@ -19,13 +26,23 @@
   align-items: center;
   justify-content: space-between;
   margin: 0;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    padding: 57px 125px 60px 77px;
+  }
 }
 
 .present__description::before {
   content: "";
-  width: 80px;
+  width: 78px;
   height: 80px;
   background-image: url("../../icons/stack.svg#present");
   background-repeat: no-repeat;
   display: block;
+
+  @media (min-width: $tablet) {
+    width: 80px;
+    height: 82px;
+  }
 }

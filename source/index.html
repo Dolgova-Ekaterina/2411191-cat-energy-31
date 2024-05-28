@@ -16,7 +16,7 @@
 <body class="page__body">
 
   <header class="main-header">
-    <div class="header-items">
+    <div class="main-header__items">
       <a class="logo" href="index.html">
         <picture>
           <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo/logo-cat-desctop.svg">
@@ -31,11 +31,11 @@
           <img src="images/logo/logo-text-cat.svg" width="101" height="18" alt="Текстовый логотип сайта Кот Энержи">
         </picture>
       </a>
-      <button class="header-items__button header-items__button--clouse" type="button">
+      <button class="main-header__button main-header__button--clouse" type="button">
         <span class="visually-hidden">Развернуть меню</span>
       </button>
     </div>
-    <nav class="nav toggle-clouse">
+    <nav class="nav nav--cloused">
       <ul class="nav__list">
         <li class="nav__item">
           <a class="nav__link nav__link--current" href="index.html">Главная</a>
@@ -57,13 +57,15 @@
         <h1 class="functional__title">Функциональное
           питание для котов</h1>
         <p class="functional__description">Занялся собой? Займись котом!</p>
+      </div>
+      <div class="functional__wrapper-inner">
         <picture>
           <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/content/main-product-desktop@1x.png, images/content/main-product-desktop@2x.png 2x">
           <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/content/main-product-tablet@1x.png, main-product-tablet@2x.png 2x">
           <img class="functional__image" src="images/content/main-product-mobile@1x.png" srcset="main-product-mobile@2x.png 2x" width="280" height="270" alt="Продукция Кота Энержи">
         </picture>
 
-        <button class="button" type="button">Подобрать программу</button>
+        <button class="functional__button button" type="button">Подобрать программу</button>
       </div>
     </section>
 
@@ -103,20 +105,21 @@
     </div>
 
     <section class="primer">
-      <h2 class="primer__title">Живой пример</h2>
-      <p class="primer__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-      <div class="analitic">
-        <div class="analitic__item">
-          <b class="analitic__state">5 кг</b>
-          <p class="analitic__statistics">снижение<br> веса</p>
+      <div class="primer__wripper">
+        <h2 class="primer__title">Живой пример</h2>
+        <p class="primer__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+        <div class="analitic">
+          <div class="analitic__item">
+            <b class="analitic__state">5 кг</b>
+            <p class="analitic__statistics">снижение<br> веса</p>
+          </div>
+          <div class="analitic__item">
+            <b class="analitic__state">60 дней</b>
+            <p class="analitic__statistics">затрачено<br> времени</p>
+          </div>
         </div>
-        <div class="analitic__item">
-          <b class="analitic__state">60 дней</b>
-          <p class="analitic__statistics">затрачено<br> времени</p>
-        </div>
+        <p class="primer__expenses"><b>Затраты на питание: 15 000 РУБ.</b></p>
       </div>
-      <p class="primer__expenses"><b>Затраты на питание: 15 000 РУБ.</b></p>
-
       <div class="slider">
         <picture>
           <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/content/result-after-tablet-desktop@1x.png, images/content/result-after-tablet-desktop@2x.png 2x">
@@ -164,13 +167,19 @@
 
       <ul class="footer__social-list">
         <li class="footer__social-item">
-          <a class="footer__social-link footer__social-link--vk" href="#">https://vk.com/htmlacademy</a>
+          <a class="footer__social-link footer__social-link--vk" href="https://vk.com/htmlacademy">
+            <span class="vissualy-hidden">Мы Вконтакте</span>
+          </a>
         </li>
         <li class="footer__social-item ">
-          <a class="footer__social-link footer__social-link--youtube" href="#">https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g</a>
+          <a class="footer__social-link footer__social-link--youtube" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">
+            <span class="vissualy-hidden">Мы на youtube</span>
+          </a>
         </li>
         <li class="footer__social-item">
-          <a class="footer__social-link footer__social-link--telegram" href="#">https://t.me/htmlacademy</a>
+          <a class="footer__social-link footer__social-link--telegram" href="https://t.me/htmlacademy">
+            <span class="vissualy-hidden">Мы в telegram</span>
+          </a>
         </li>
       </ul>
 
@@ -179,8 +188,6 @@
         <a class="copyright__img-logo" href="https://htmlacademy.ru/">
           <span class="vissualy-hidden">Логотип HTML Academy</span>
         </a>
-        <!-- <img src="images/logo/logo-html.svg" width="27" height="34" alt="Логотип HTML Academy">
-        </a> -->
       </div>
 
     </footer>

@@ -1,6 +1,38 @@
 .subscription__title {
   font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000000;
+  margin: 0;
+  margin-top: 40px;
+}
+
+.subscription__block {
+  display: flex;
+  flex-direction: column;
+}
+
+.subscription__text {
+  font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #000000;
+  margin-top: 32px;
+  text-align: center;
+}
+
+.subscription__form {
+  width: 100%;
+  margin-top: 24px;
+  padding: 13px;
+  margin-bottom: 16px;
+}
+
+
+.subscription__button {
+  font-size: 20px;
+  line-height: 26px;
+  cursor: pointer;
+  margin-bottom: 40px;
 }

@@ -21,10 +21,22 @@ a {
 
 .index-container {
   padding: 0 20px;
+
+  @media (min-width: $desktop) {
+    padding: 0 110px;
+  }
 }
 
 .catalog-container {
   padding: 0 20px;
+
+  @media (min-width: $tablet) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 110px;
+  }
 }
 
 .button {
@@ -41,20 +53,18 @@ a {
   cursor: pointer;
 }
 
-.subscription-button {
-  font-size: 20px;
-  line-height: 26px;
-  cursor: pointer;
+
+// .show-button {
+//   background-color: #f2f2f2;
+//   color: #444444;
+//   cursor: pointer;
+// }
+
+.button--order {
+  grid-column: span 2;
 }
 
-
-.show-button {
-  background-color: #f2f2f2;
-  color: #444444;
-  cursor: pointer;
-}
-
-.toggle-clouse {
-  display: none;
-  cursor: pointer;
+.order-button {
+  grid-row: 3 / 3;
+  grid-column: 1 / 3;
 }
