@@ -1,1 +1,0 @@
-var e=document.querySelector(".main-header__button"),s=document.querySelector(".nav");e.addEventListener("click",t=>{t.preventDefault(),e.classList.contains("main-header__button--clouse")?(e.classList.remove("main-header__button--clouse"),s.classList.add("nav--cloused")):(e.classList.add("main-header__button--clouse"),s.classList.remove("nav--cloused"))});
